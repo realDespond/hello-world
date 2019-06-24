@@ -11,12 +11,14 @@ echo 1) Red Hello world
 echo 2) Green Hello world
 echo 3) White Hello world
 echo 4) Different Hello world
+echo 5) Exit
 set /p menu=
 
 if %menu% == 1 goto red
 if %menu% == 2 goto Green
 if %menu% == 3 goto White
 if %menu% == 4 goto different
+if %menu% == 5 exit
 
 :helloWorld
 cls
